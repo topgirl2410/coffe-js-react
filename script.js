@@ -4,14 +4,10 @@ const menuCloseButton = document.querySelector('#menu-close-button');
 
 menuOpenButton.addEventListener('click', () => {
     //Toggle mobile menu visibikity
-    
+
     document.body.classList.toggle('show-mobile-menu');
-    
+
 })
 
-menuCloseButton.addEventListener('click', () => {
-    //Toggle mobile menu visibikity
-    
-    document.body.classList.toggle('show-mobile-menu');
-    
-})
+// Close menu when the close button is clicked
+menuCloseButton.addEventListener("click", () => menuOpenButton.click())
