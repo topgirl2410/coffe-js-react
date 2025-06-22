@@ -63,9 +63,18 @@ img {
     width: 100%;
 }
 
+section-content {
+    max-width: var(--site-max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 /* Navbar stilyng */
 
 header {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
     background: var(--primary-color)
 }
 
@@ -99,4 +108,41 @@ header .navbar {
 .navbar .nav-menu .nav-link:hover {
     background: var(--secondary-color);
     color: var(--primary-color);
+}
+
+.hero-section {
+    min-height: 100vh;
+    background: var(--primary-color);
+}
+
+.hero-section .section-content {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--white-color);
+    justify-content: space-between;
+}
+
+.hero-section .hero-details .title {
+    font-size: var(--font-size-xxl);
+    color: var(--secondary-color);
+    font-family: "Miniver", sans-serif;
+}
+
+.hero-section .hero-details .subtitle {
+    
+    max-width: 70%;
+    margin-top: 8px;
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semi-bold);
+}
+
+.hero-section .hero-details .description {
+    max-width: 70%;
+    margin: 24px 0 40px;
+    font-size: var(--font-size-m);
+}
+
+.hero-section .hero-image-wrapper {
+    max-width: 500px;
 }
